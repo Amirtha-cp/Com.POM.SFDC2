@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.Automation.Utility.SFDCListeners"/>
+  </listeners>
+  <test thread-count="3" parallel="tests" name="Test(failed)">
+    <classes>
+      <class name="com.Automation.Tests.UserMenuDropDownTest">
+        <methods>
+          <include name="setUpBeforeMethod"/>
+          <include name="myProfileTest"/>
+          <include name="developerConsoleTest"/>
+          <include name="tearDownAfterMethod"/>
+          <include name="setup"/>
+          <include name="mySettingsTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.Automation.Tests.UserMenuDropDownTest -->
+      <class name="com.Automation.Tests.LoginTest">
+        <methods>
+          <include name="setUpBeforeMethod"/>
+          <include name="logoutTest"/>
+          <include name="tearDownAfterMethod"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.Automation.Tests.LoginTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
